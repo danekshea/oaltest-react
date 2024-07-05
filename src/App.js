@@ -26,11 +26,17 @@ function App() {
           <QueryClientProvider client={queryClient}>
             <RainbowKitProvider>
               <ConnectButton />
-              <SendTransaction />
             </RainbowKitProvider>
           </QueryClientProvider>
         </WagmiProvider>
       </header>
+      <div className="App-content">
+        <WagmiProvider config={config}>
+          <QueryClientProvider client={queryClient}>
+            <SendTransaction />
+          </QueryClientProvider>
+        </WagmiProvider>
+      </div>
     </div>
   );
 }
