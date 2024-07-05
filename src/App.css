@@ -27,38 +27,43 @@
   display: flex;
   flex-direction: column;
   width: 100%; /* Ensures form container takes up available width */
-  max-width: 350px; /* Maximum width for the form */
+  max-width: 500px; /* Maximum width for the form */
   margin: auto;
   padding: 0 20px; /* Add some padding for better spacing */
+  align-items: center;
 }
 
 .form-group {
   margin-bottom: 15px;
   text-align: left; /* Ensures text alignment */
+  width: 100%; /* Full width */
 }
 
 .form-group label {
   display: block;
   margin-bottom: 5px;
-  font-size: 0.85em; /* Smaller text for the label */
+  font-size: 1.2em; /* Smaller text for the label */
   color: #333; /* Darker color for better readability */
 }
 
 .input-box {
-  padding: 8px;
+  padding: 12px;
+  font-size: 1.2em; /* Normal font size */
   width: 100%; /* Ensure input boxes take full width of container */
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-button {
+.test-button {
   padding: 10px 15px;
   border: none;
+  font-size: 1.4em;
   border-radius: 4px;
   background-color: #007bff;
   color: white;
   cursor: pointer;
+  width: auto;
 }
 
 button:disabled {

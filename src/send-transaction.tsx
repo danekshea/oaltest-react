@@ -45,9 +45,10 @@ export function SendTransaction() {
         <label htmlFor="tokenId">Token ID</label>
         <input id="tokenId" className="input-box" name="tokenId" placeholder="1" required />
       </div>
-      <button disabled={isPending} type="submit">
+      <button className="test-button" disabled={isPending} type="submit">
         {isPending ? "Confirming..." : "Test OAL"}
       </button>
+      <br />
       {isConfirming && (
         <div>
           Waiting for confirmation...
@@ -58,7 +59,6 @@ export function SendTransaction() {
           )}
         </div>
       )}{" "}
-      <br />
       {isConfirmed && (
         <div>
           OAL not implemented...
